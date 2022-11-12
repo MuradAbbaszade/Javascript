@@ -24,5 +24,5 @@ else if (avarageScoreDolphins > avarageScoreKoalas) console.log("Dophins winner"
 else console.log("Koalas winner");
 //Coding challange
 const bill = 350;
-const tip = bill <= 300 && bill >= 25 ? 15 : 20;
-console.log(tip);
+const tip = bill <= 300 && bill >= 25 ? ((bill * 15) / 100) : ((bill * 15) / 100);
+console.log(`The bill was ${bill},the tip was ${tip} and the final value is ${bill+tip}`);
