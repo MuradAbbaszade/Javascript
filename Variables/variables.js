@@ -19,6 +19,10 @@ console.log(markHigherBMI);
 //Coding challange
 const avarageScoreDolphins = (96 + 108 + 89) / 3;
 const avarageScoreKoalas = (88 + 91 + 110) / 3;
-if(avarageScoreDolphins==avarageScoreKoalas) console.log("DRAW");
-else if(avarageScoreDolphins>avarageScoreKoalas) console.log("Dophins winner");
+if (avarageScoreDolphins == avarageScoreKoalas) console.log("DRAW");
+else if (avarageScoreDolphins > avarageScoreKoalas) console.log("Dophins winner");
 else console.log("Koalas winner");
+//Coding challange
+const bill = 350;
+const tip = bill <= 300 && bill >= 25 ? 15 : 20;
+console.log(tip);
