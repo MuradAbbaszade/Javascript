@@ -15,4 +15,10 @@ let markHeight = 1.69;
 let markBMI = markMass / (markHeight ** 2);
 let johnBMI = johnMass / (johnHeight ** 2);
 let markHigherBMI = markBMI > johnBMI;
-console.log(markHigherBMI); 
+console.log(markHigherBMI);
+//Coding challange
+const avarageScoreDolphins = (96 + 108 + 89) / 3;
+const avarageScoreKoalas = (88 + 91 + 110) / 3;
+if(avarageScoreDolphins==avarageScoreKoalas) console.log("DRAW");
+else if(avarageScoreDolphins>avarageScoreKoalas) console.log("Dophins winner");
+else console.log("Koalas winner");
