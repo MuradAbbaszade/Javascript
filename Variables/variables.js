@@ -26,3 +26,10 @@ else console.log("Koalas winner");
 const bill = 350;
 const tip = bill <= 300 && bill >= 25 ? ((bill * 15) / 100) : ((bill * 15) / 100);
 console.log(`The bill was ${bill},the tip was ${tip} and the final value is ${bill+tip}`);
+//Functions
+function getSum(a,b){
+    return a+b;
+}
+const sum = function(a,b){
+    return a+b;
+}
