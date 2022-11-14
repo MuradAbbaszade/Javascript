@@ -49,3 +49,14 @@ const checkWinner = function (avgDolphins, avgKoalas) {
     }
 }
 checkWinner(calcAvarage(440, 250, 71), calcAvarage(200, 150, 49));
+//Arrays in JS
+const person = ['Murad', 'Abbaszade', 18, 'Baku'];
+const people = new Array();
+people.push(person);//add element to back
+people.pop();//remove element from back
+people.unshift(person)//add element to front
+people.shift()//remove element from front
+people.includes('a')//check value is present in array
+people.indexOf('a')//get index of value in array
+people.length()//get length of the array
+console.log(people[0]);
