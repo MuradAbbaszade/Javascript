@@ -25,11 +25,27 @@ else console.log("Koalas winner");
 //Coding challange
 const bill = 350;
 const tip = bill <= 300 && bill >= 25 ? ((bill * 15) / 100) : ((bill * 15) / 100);
-console.log(`The bill was ${bill},the tip was ${tip} and the final value is ${bill+tip}`);
+console.log(`The bill was ${bill},the tip was ${tip} and the final value is ${bill + tip}`);
 //Functions
-function getSum(a,b){
-    return a+b;
+function getSum(a, b) {
+    return a + b;
 }
-const sum = function(a,b){
-    return a+b;
+const sum = function (a, b) {
+    return a + b;
 }
+//Coding challange
+const calcAvarage = (a, b, c) => (a + b + c) / 3;
+/*const dolphinsScore = calcAvarage(44, 23, 71);
+const koalasScore = calcAvarage(65, 54, 49);*/
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins < avgKoalas) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    }
+    else if (avgDolphins > avgKoalas) {
+        console.log(`Dolphins win (${avgKoalas} vs ${avgDolphins})`);
+    }
+    else {
+        console.log(`Draw (${avgKoalas} vs ${avgDolphins})`);
+    }
+}
+checkWinner(calcAvarage(440, 250, 71), calcAvarage(200, 150, 49));
