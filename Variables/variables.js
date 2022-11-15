@@ -110,3 +110,25 @@ for (let i = 0; i < exampleArray.length; i++) {
     console.log(typeArray[i]);
 }
 
+//Coding challange
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const calcTip = function (bill) {
+    return bill <= 300 && bill >= 25 ? ((bill * 15) / 100) : ((bill * 15) / 100);
+}
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(bills[i] + calcTip(bills[i]));
+}
+console.log(tips);
+console.log(totals);
+const calcAvarage2 = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAvarage2(totals));
+
