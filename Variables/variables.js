@@ -64,8 +64,37 @@ console.log(people[0]);
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedetman',
-    age: 18,
-    friends: ['Michael', 'Bob', 'Jay']
+    birthYear: 1991,
+    friends: ['Michael', 'Bob', 'Jay'],
+    age: function () {
+        return 2022 - this.birthYear;
+    }
 };
 const information = `${jonas.firstName} have ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}`;
 console.log(information);
+console.log(jonas.firstName)//dot notation
+console.log(jonas['firstName'])//bracket notation
+console.log(jonas.age());
+//Coding challange
+const mark = {
+    name: 'Mark',
+    mass: 78,
+    height: 1.69,
+    bmi: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+const jonas2 = {
+    name: 'Mark',
+    mass: 92,
+    height: 1.95,
+    bmi: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+console.log(mark.bmi());
+console.log(jonas2.bmi());
+console.log(mark.bmi);
+console.log(jonas2.bmi);
