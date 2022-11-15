@@ -96,5 +96,17 @@ const jonas2 = {
 };
 console.log(mark.bmi());
 console.log(jonas2.bmi());
-console.log(mark.bmi);
-console.log(jonas2.bmi);
+const exampleArray = [
+    'Murad',
+    18,
+    'Abbaszade',
+    ['A', 'B', 'C']
+]
+const typeArray = new Array();
+for (let i = 0; i < exampleArray.length; i++) {
+    typeArray[i] = typeof exampleArray[i];
+}
+for (let i = 0; i < exampleArray.length; i++) {
+    console.log(typeArray[i]);
+}
+
