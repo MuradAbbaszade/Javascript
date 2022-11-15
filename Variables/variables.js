@@ -58,5 +58,14 @@ people.unshift(person)//add element to front
 people.shift()//remove element from front
 people.includes('a')//check value is present in array
 people.indexOf('a')//get index of value in array
-people.length()//get length of the array
+people.length//get length of the array
 console.log(people[0]);
+//Object in Javascript
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedetman',
+    age: 18,
+    friends: ['Michael', 'Bob', 'Jay']
+};
+const information = `${jonas.firstName} have ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}`;
+console.log(information);
