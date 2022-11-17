@@ -131,3 +131,19 @@ const calcAvarage2 = function(arr) {
   return sum / arr.length;
 };
 console.log(calcAvarage2(totals));
+
+//Coding challange
+const printForecast = function(arr) {
+  let s = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (i == arr.length - 1) {
+      s += `...${arr[i]}*C in ${i + 1} days...`;
+      return s;
+    }
+    s += `...${arr[i]}*C in ${i + 1} days`;
+  }
+  return s;
+};
+const arr = [17, 21, 23];
+const s = printForecast(arr);
+console.log(s);
