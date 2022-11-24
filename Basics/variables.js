@@ -148,10 +148,26 @@ const arr = [17, 21, 23];
 const s = printForecast(arr);
 console.log(s);
 
-//Destructring
+//Array Destructring
 [x, y, z] = [2, 3, 4];
 const nestedArr = [2, 3, [5, 6, 7]];
 [a, b, [c, d, e]] = nestedArr;
 console.log(a, b, c, d, e);
 [a, b] = [b, a];
 console.log(a, b);
+
+//Object Destructring
+const team = {
+  color: "red",
+  members: ["A", "B", "C"],
+  point: 0,
+  printTeamInformation: function(color, members) {
+    //Immediatly destructring
+    console.log(color, members);
+  }
+};
+
+team.printTeamInformation({
+  color: "blue",
+  members: ["a"]
+});
