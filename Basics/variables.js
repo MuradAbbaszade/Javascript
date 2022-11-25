@@ -1,3 +1,4 @@
+/*
 //Variables
 let country = "Azerbaijan";
 let continent = "Europe";
@@ -41,7 +42,7 @@ const sum = function(a, b) {
 //Coding challange
 const calcAvarage = (a, b, c) => (a + b + c) / 3;
 /*const dolphinsScore = calcAvarage(44, 23, 71);
-const koalasScore = calcAvarage(65, 54, 49);*/
+const koalasScore = calcAvarage(65, 54, 49);
 const checkWinner = function(avgDolphins, avgKoalas) {
   if (avgDolphins < avgKoalas) {
     console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
@@ -171,3 +172,20 @@ team.printTeamInformation({
   color: "blue",
   members: ["a"]
 });
+*/
+
+//Spread and Rest operators
+const restaurant = {
+  name: "A",
+  foods: ["B", "C", "E", "F"],
+  makeFood: function(mainIngredient, ...otherIngredient) {
+    //Rest
+    console.log(mainIngredient);
+    console.log(...otherIngredient);
+  }
+};
+const numbers = function(a, b, c) {
+  console.log(a, b, c);
+};
+numbers(...[1, 2, 3]);
+restaurant.makeFood("onion", "cucumber", "patato");
