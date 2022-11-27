@@ -231,4 +231,22 @@ const game = {
   }
 };
 const [players1, players2] = game.players;
-console.log(players1, players2);
+console.log(players1, players2); //1
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers); //2
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers); //3
+const players1Final = [...players1, "Tiago", "Courinho", "Perisic"];
+console.log(players1Final); //4
+const { team1: team1Odd, x: draw, team2: team2Odd } = game.odds;
+console.log(team1Odd, draw, team2Odd); //5
+const pringGoals = function(...playerNames) {
+  for (let i = 0; i < playerNames.length; i++) {
+    console.log(playerNames[i]);
+  }
+};
+pringGoals(["Hummels", "Seydayev", "Qarayev"]);
+pringGoals(game.scored);
+pringGoals("Hummels"); //6
+game.odds.team1 < game.odds.team2 || console.log("Borussia");
+game.odds.team1 < game.odds.team2 && console.log("Bayern");
